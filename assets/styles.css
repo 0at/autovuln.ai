@@ -770,6 +770,90 @@ input {
   text-underline-offset: 4px;
 }
 
+.policy-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  margin-top: 48px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--line);
+}
+
+.policy-metrics div {
+  min-height: 112px;
+  padding: 24px;
+  background: #0b0e13;
+}
+
+.policy-metrics strong,
+.policy-metrics span {
+  display: block;
+}
+
+.policy-metrics strong {
+  color: var(--text);
+  font-size: 1.08rem;
+  font-weight: 600;
+}
+
+.policy-metrics span {
+  margin-top: 9px;
+  color: var(--muted);
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.05em;
+  line-height: 1.5;
+  text-transform: uppercase;
+}
+
+.transparency-table-wrap {
+  margin-top: 24px;
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+}
+
+.transparency-table-wrap:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+.transparency-table {
+  width: 100%;
+  min-width: 760px;
+  border-collapse: collapse;
+  font-family: var(--mono);
+  font-size: 0.67rem;
+}
+
+.transparency-table th,
+.transparency-table td {
+  padding: 16px 18px;
+  border-bottom: 1px solid var(--line);
+  text-align: left;
+  vertical-align: top;
+}
+
+.transparency-table th {
+  background: #0b0e13;
+  color: var(--muted-bright);
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.transparency-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.transparency-table .status-empty {
+  padding: 26px 18px;
+  color: var(--muted);
+  text-align: center;
+}
+
 .thanks-page {
   display: grid;
   place-items: center;
@@ -932,6 +1016,14 @@ input {
   .legal-sections section {
     grid-template-columns: 1fr;
     gap: 13px;
+  }
+
+  .policy-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .policy-metrics div {
+    min-height: 0;
   }
 }
 
