@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Public status notices for vulnerabilities reported by AutoVuln.">
+    <meta name="theme-color" content="#090b0f">
+    <meta property="og:title" content="Reporting transparency — AutoVuln">
+    <meta property="og:description" content="A public register of vulnerability reports and their disclosure deadlines.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://autovuln.ai/reporting_transparancy.html">
+    <title>Reporting transparency — AutoVuln</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <!-- Cloudflare Web Analytics -->
+    <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token":"016f3f57f47642718726d1131d25524d"}'></script>
+    <!-- End Cloudflare Web Analytics -->
+  </head>
+  <body class="theme-autovuln legal-page disclosure-policy-page">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header shell">
+      <a class="brand" href="./" aria-label="AutoVuln home">
+        <span class="brand-mark" aria-hidden="true">AV</span>
+        <span class="brand-name">AutoVuln</span>
+      </a>
+      <div class="header-meta"><a class="header-cta" href="./">Back to site</a></div>
+    </header>
+
+    <main class="legal-main" id="main">
+      <div class="legal-hero">
+        <p class="legal-kicker">Security / Public record</p>
+        <h1>Reporting transparency</h1>
+        <p class="effective-date">Reporting began 3 September 2026</p>
+        <p class="legal-intro">
+          This register shows when AutoVuln reports a vulnerability, who received the report, and
+          when the disclosure deadline expires.
+        </p>
+      </div>
+
+      <div class="legal-sections">
+        <section>
+          <div>
+            <h2>What AutoVuln publishes</h2>
+            <p>Within approximately one week of reporting a vulnerability, AutoVuln publishes:</p>
+            <ul>
+              <li>the vendor or open-source project that received the report;</li>
+              <li>the affected product; and</li>
+              <li>the date the report was filed and the date when the 90-day disclosure deadline expires.</li>
+            </ul>
+            <p>The initial notice does not include a technical description, proof-of-concept code, or details that would materially help an attacker find or exploit the vulnerability.</p>
+          </div>
+        </section>
+
+        <section>
+          <div>
+            <h2>Current reports</h2>
+            <div class="transparency-table-wrap" role="region" aria-label="Vulnerability reporting transparency register" tabindex="0">
+              <table class="transparency-table">
+                <thead>
+                  <tr>
+                    <th scope="col">Reference</th>
+                    <th scope="col">Reported to</th>
+                    <th scope="col">Product</th>
+                    <th scope="col">Date reported</th>
+                    <th scope="col">90-day deadline</th>
+                    <th scope="col">Status</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="status-empty" colspan="6">No reports are currently listed.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div>
+            <h2>How entries change</h2>
+            <p>AutoVuln updates an entry when the recipient releases a fix, the deadline changes, or the disclosure status changes.</p>
+            <p>When technical details become public, the reference will link to the disclosure. The entry can also show the fix date and the date when users could first obtain the fix.</p>
+          </div>
+        </section>
+
+        <section>
+          <div>
+            <h2>Disclosure rules</h2>
+            <p>The <a href="vulnerability-disclosure-policy.html">AutoVuln vulnerability disclosure policy</a> defines the standard deadline, the post-fix disclosure window, grace periods, and the shorter deadline for active exploitation.</p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="site-footer shell">
+      <span>© 2026 AutoVuln</span>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="./">Home</a>
+        <a href="vulnerability-disclosure-policy.html">Disclosure Policy</a>
+        <a href="privacy/">Privacy Policy</a>
+        <a href="mailto:privacy@autovuln.ai">Contact</a>
+      </nav>
+    </footer>
+  </body>
+</html>
